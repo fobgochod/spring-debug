@@ -1,9 +1,27 @@
 package com.mashibing.lesson16.l_16_01;
 
-public class Person {
+public class Person2 {
 
     private Integer id;
     private String name;
+
+    public Person2() {
+        System.out.println("构造方法");
+    }
+
+    public Person2(Integer id) {
+        this.id = id;
+    }
+
+    public Person2(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Person2(String name, Integer id) {
+        this.id = id;
+        this.name = name;
+    }
 
     public Integer getId() {
         return id;

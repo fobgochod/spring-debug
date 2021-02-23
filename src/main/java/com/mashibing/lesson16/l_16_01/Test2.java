@@ -4,7 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
- * Person 属性注入
+ * Person 构造器注入
  * AbstractAutowireCapableBeanFactory.java:1180
  * <p>
  * boolean resolved = false;
@@ -13,14 +13,15 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author zhouxiao
  * @date 2021/2/23
  */
-public class Test {
+public class Test2 {
 
     public static void main(String[] args) {
+
         /**
-         * 属性注入person.xml
+         * 构造器注入person2.xml
          */
-        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:lesson16/person.xml");
-        Person bean = ac.getBean(Person.class);
-        Person bean2 = ac.getBean(Person.class);
+        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:lesson16/person2.xml");
+        Person2 bean = ac.getBean(Person2.class);
+        Person2 bean2 = ac.getBean(Person2.class);
     }
 }

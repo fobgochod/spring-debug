@@ -1,9 +1,31 @@
 package com.mashibing.lesson16.l_16_01;
 
-public class Person {
+import org.springframework.beans.factory.annotation.Autowired;
+
+public class Person3 {
 
     private Integer id;
     private String name;
+
+    public Person3() {
+        System.out.println("构造方法");
+    }
+
+    @Autowired
+    public Person3(Integer id) {
+        this.id = id;
+    }
+
+    @Autowired(required = false)
+    public Person3(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public Person3(String name, Integer id) {
+        this.id = id;
+        this.name = name;
+    }
 
     public Integer getId() {
         return id;
