@@ -42,9 +42,9 @@ public class Test {
 ////        ac.close();
 ////        Person person2 = ac.getBean("person", Person.class);
 //
-////        ApplicationContext ac = new ClassPathXmlApplicationContext("person.xml");
-////        Person bean = ac.getBean(Person.class);
-////        Person bean2 = ac.getBean(Person.class);
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("person.xml");
+//        Person bean = ac.getBean(Person.class);
+//        Person bean2 = ac.getBean(Person.class);
 //
 ////        System.out.println(System.getProperties());
 ////        System.out.println(System.getenv());
