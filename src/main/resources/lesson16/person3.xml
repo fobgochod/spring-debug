@@ -6,7 +6,7 @@
 
     <context:component-scan base-package="com.mashibing.lesson16.l_16_01"></context:component-scan>
 
-    <bean id="person3" class="com.mashibing.lesson16.l_16_01.Person3" scope="prototype">
+    <bean id="person3" class="com.mashibing.lesson16.Person3" scope="prototype">
         <constructor-arg name="id" value="1"></constructor-arg>
         <constructor-arg name="name" value="lisi"></constructor-arg>
     </bean>

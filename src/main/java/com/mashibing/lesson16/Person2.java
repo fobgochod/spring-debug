@@ -1,4 +1,4 @@
-package com.mashibing.lesson16.l_16_01;
+package com.mashibing.lesson16;
 
 public class Person2 {
 

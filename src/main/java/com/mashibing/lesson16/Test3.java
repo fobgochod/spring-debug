@@ -1,4 +1,4 @@
-package com.mashibing.lesson16.l_16_01;
+package com.mashibing.lesson16;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

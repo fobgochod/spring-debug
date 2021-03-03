@@ -1,4 +1,4 @@
-package com.mashibing.lesson16.l_16_01;
+package com.mashibing.lesson16;
 
 import org.springframework.beans.factory.BeanClassLoaderAware;
 import org.springframework.beans.factory.InitializingBean;
