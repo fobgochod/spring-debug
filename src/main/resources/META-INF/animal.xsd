@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema"
+        targetNamespace="http://www.mashibing.com/schema/animal"
+        xmlns:tns="http://www.mashibing.com/schema/animal"
+        elementFormDefault="qualified">
+    <element name="cat">
+        <complexType>
+            <attribute name="id" type="string"/>
+            <attribute name="name" type="string"/>
+            <attribute name="kind" type="string"/>
+        </complexType>
+    </element>
+</schema>
