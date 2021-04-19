@@ -4,11 +4,11 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd">
 
-    <context:component-scan base-package="com.mashibing.lesson16.l_16_01"></context:component-scan>
+    <context:component-scan base-package="com.mashibing.lesson16"></context:component-scan>
 
     <bean id="person3" class="com.mashibing.lesson16.Person3" scope="prototype">
-        <constructor-arg name="id" value="1"></constructor-arg>
-        <constructor-arg name="name" value="lisi"></constructor-arg>
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="lisi"/>
     </bean>
 
 </beans>

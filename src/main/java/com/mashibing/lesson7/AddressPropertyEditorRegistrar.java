@@ -1,14 +1,12 @@
-package com.mashibing.selfEditor;
+package com.mashibing.lesson7;
 
 import org.springframework.beans.PropertyEditorRegistrar;
 import org.springframework.beans.PropertyEditorRegistry;
-
-import java.beans.PropertyEditor;
 
 public class AddressPropertyEditorRegistrar implements PropertyEditorRegistrar {
 
     @Override
     public void registerCustomEditors(PropertyEditorRegistry registry) {
-        registry.registerCustomEditor(Address.class,new AddressPropertyEditor());
+        registry.registerCustomEditor(Address.class, new AddressPropertyEditor());
     }
 }

@@ -1,8 +1,8 @@
-package com.mashibing.selfEditor;
+package com.mashibing.lesson7;
 
 import java.beans.PropertyEditorSupport;
 
-public class AddressPropertyEditor  extends PropertyEditorSupport {
+public class AddressPropertyEditor extends PropertyEditorSupport {
 
     @Override
     public void setAsText(String text) throws IllegalArgumentException {

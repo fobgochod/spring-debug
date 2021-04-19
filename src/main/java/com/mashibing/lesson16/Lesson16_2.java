@@ -14,7 +14,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author zhouxiao
  * @date 2021/2/23
  */
-public class Test3 {
+public class Lesson16_2 {
 
     /**
      * 获取构造器集合
@@ -30,7 +30,7 @@ public class Test3 {
         /**
          * 构造器注入person3.xml
          */
-        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:lesson16/person3.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/person16-3.xml");
         Person3 bean = ac.getBean(Person3.class);
         Person3 bean2 = ac.getBean(Person3.class);
     }

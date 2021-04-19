@@ -1,7 +1,8 @@
-package com.mashibing.selfEditor;
+package com.mashibing.lesson7;
 
 
 public class Address {
+    
     private String province;
     private String city;
     private String town;

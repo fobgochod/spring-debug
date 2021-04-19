@@ -1,7 +1,4 @@
-package com.mashibing.selfEditor;
-
-import org.springframework.context.annotation.PropertySource;
-
+package com.mashibing.lesson7;
 
 public class Customer {
 

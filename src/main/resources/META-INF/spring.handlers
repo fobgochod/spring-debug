@@ -1,2 +1,1 @@
-http\://www.mashibing.com/schema/user=com.mashibing.selftag.UserNamespaceHandler
 http\://www.mashibing.com/schema/animal=com.mashibing.lesson6.AnimalNamespaceHandler

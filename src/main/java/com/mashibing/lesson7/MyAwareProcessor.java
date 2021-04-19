@@ -1,12 +1,11 @@
-package com.mashibing.selfAware;
+package com.mashibing.lesson7;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
-import org.springframework.context.*;
+import org.springframework.context.ApplicationContextAware;
+import org.springframework.context.ConfigurableApplicationContext;
 
 import java.security.AccessControlContext;
-import java.security.AccessController;
-import java.security.PrivilegedAction;
 
 public class MyAwareProcessor implements BeanPostProcessor {
 
