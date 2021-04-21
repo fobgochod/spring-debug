@@ -1,4 +1,4 @@
-package com.mashibing.selfbdrpp;
+package com.mashibing.lesson9;
 
 public class Teacher {
 
