@@ -2,6 +2,9 @@
 
 ConfigurationClassParser.java:311
 
+processImports()
+# 导入一些额外的配置类，同时完成了具体类的一个实例化工作
+
 
 ConfigurationClassPostProcessor.java:319
 ->parser.parse(candidates);
