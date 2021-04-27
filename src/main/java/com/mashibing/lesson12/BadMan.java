@@ -1,8 +1,8 @@
-package com.mashibing.obverser.test01;
+package com.mashibing.lesson12;
 
 import java.util.ArrayList;
 
-public class BadMan implements Observable{
+public class BadMan implements Observable {
 
     private ArrayList<Observer> observers = new ArrayList<Observer>();
 

@@ -1,6 +1,6 @@
-package com.mashibing.obverser.test01;
+package com.mashibing.lesson12;
 
-public class Test {
+public class Lesson12 {
 
     public static void main(String[] args) {
         // 创建被观察者

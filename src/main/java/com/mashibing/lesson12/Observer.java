@@ -1,4 +1,4 @@
-package com.mashibing.obverser.test01;
+package com.mashibing.lesson12;
 
 /**
  * 观察者
