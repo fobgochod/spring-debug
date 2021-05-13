@@ -1,4 +1,4 @@
-package com.mashibing.methodOverrides.lookup;
+package com.mashibing.lesson14.lookup;
 
 public abstract class FruitPlate{
     // 抽象方法获取新鲜水果

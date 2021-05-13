@@ -1,4 +1,4 @@
-package com.mashibing.supplier;
+package com.mashibing.lesson15.supplier;
 
 public class User {
 

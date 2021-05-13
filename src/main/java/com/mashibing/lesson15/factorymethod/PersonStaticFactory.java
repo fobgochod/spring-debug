@@ -1,16 +1,16 @@
-package com.mashibing.factoryMethod;
+package com.mashibing.lesson15.factorymethod;
 
 public class PersonStaticFactory {
+
+    public static Person getPerson(int age){
+        return new Person();
+    }
 
     public static Person getPerson(String name){
         Person person = new Person();
         person.setId(1);
         person.setName(name);
         return person;
-    }
-
-    public static Person getPerson(int age){
-        return new Person();
     }
 
     public static Person getPerson(String name,int id){

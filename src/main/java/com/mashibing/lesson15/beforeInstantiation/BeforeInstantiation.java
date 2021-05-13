@@ -1,4 +1,4 @@
-package com.mashibing.resolveBeforeInstantiation;
+package com.mashibing.lesson15.beforeInstantiation;
 
 public class BeforeInstantiation {
 

@@ -1,4 +1,4 @@
-package com.mashibing.factoryMethod;
+package com.mashibing.lesson15.factorymethod;
 
 public class Person {
     private int id;

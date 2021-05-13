@@ -1,7 +1,8 @@
-package com.mashibing.factoryMethod;
+package com.mashibing.lesson15.factorymethod;
 
 public class PersonInstanceFactory {
-    public Person getPerson(String name){
+
+    public Person getPerson(String name) {
         Person person = new Person();
         person.setId(1);
         person.setName(name);
