@@ -17,7 +17,7 @@ public class Lesson16 {
 
     public static void main(String[] args) {
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/person16.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/lesson16.xml");
 
         // 属性注入person
         Person bean = ac.getBean(Person.class);

@@ -1,17 +1,15 @@
 package com.mashibing.lesson17;
 
-import org.springframework.beans.factory.BeanClassLoaderAware;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.core.Ordered;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
+import javax.annotation.Resource;
 
-public class Person implements BeanClassLoaderAware, Ordered, InitializingBean {
+public class Person {
 
-    private ClassLoader classLoader;
     private Integer id;
     private String name;
+    @Resource
+    private Seven seven;
 
     public Person() {
         System.out.println("构造方法");
@@ -57,30 +55,20 @@ public class Person implements BeanClassLoaderAware, Ordered, InitializingBean {
         this.name = name;
     }
 
+    public Seven getSeven() {
+        return seven;
+    }
+
+    public void setSeven(Seven seven) {
+        this.seven = seven;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
+                ", seven=" + seven +
                 '}';
-    }
-
-    @Override
-    public void setBeanClassLoader(ClassLoader classLoader) {
-        this.classLoader = classLoader;
-    }
-
-    public ClassLoader getClassLoader() {
-        return classLoader;
-    }
-
-    @Override
-    public int getOrder() {
-        return 0;
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-
     }
 }

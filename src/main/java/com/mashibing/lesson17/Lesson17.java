@@ -13,7 +13,8 @@ public class Lesson17 {
     public static void main(String[] args) {
 
         ClassPathXmlApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/lesson17.xml");
-        Person person = ac.getBean("person", Person.class);
+        Person person = ac.getBean(Person.class);
+        System.out.println("person = " + person);
         ac.close();
     }
 }

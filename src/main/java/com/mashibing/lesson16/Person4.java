@@ -1,13 +1,9 @@
 package com.mashibing.lesson16;
 
-import org.springframework.beans.factory.BeanClassLoaderAware;
-import org.springframework.beans.factory.InitializingBean;
-import org.springframework.core.Ordered;
-
 import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
-public class Person4 implements BeanClassLoaderAware, Ordered, InitializingBean {
+public class Person4 {
 
     private ClassLoader classLoader;
     private Integer id;
@@ -65,22 +61,4 @@ public class Person4 implements BeanClassLoaderAware, Ordered, InitializingBean 
                 '}';
     }
 
-    @Override
-    public void setBeanClassLoader(ClassLoader classLoader) {
-        this.classLoader = classLoader;
-    }
-
-    public ClassLoader getClassLoader() {
-        return classLoader;
-    }
-
-    @Override
-    public int getOrder() {
-        return 0;
-    }
-
-    @Override
-    public void afterPropertiesSet() throws Exception {
-
-    }
 }

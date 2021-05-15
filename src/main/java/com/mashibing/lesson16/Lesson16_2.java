@@ -30,14 +30,14 @@ public class Lesson16_2 {
         /**
          * 构造器注入person3.xml
          */
-        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/person16-2.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("classpath:config/lesson16-2.xml");
         Person3 bean = ac.getBean(Person3.class);
         Person3 bean2 = ac.getBean(Person3.class);
         System.out.println("bean = " + bean);
         System.out.println("bean2 = " + bean2);
 
 
-        ClassPathXmlApplicationContext ac4 = new ClassPathXmlApplicationContext("classpath:config/person16-2.xml");
+        ClassPathXmlApplicationContext ac4 = new ClassPathXmlApplicationContext("classpath:config/lesson16-2.xml");
         Person4 person4 = ac4.getBean(Person4.class);
         System.out.println("person4 = " + person4);
         ac4.close();

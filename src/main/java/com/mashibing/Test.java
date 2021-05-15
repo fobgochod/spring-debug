@@ -42,7 +42,7 @@ public class Test {
 ////        ac.close();
 ////        Person person2 = ac.getBean("person", Person.class);
 //
-//        ApplicationContext ac = new ClassPathXmlApplicationContext("person16.xml");
+//        ApplicationContext ac = new ClassPathXmlApplicationContext("lesson16.xml");
 //        Person bean = ac.getBean(Person.class);
 //        Person bean2 = ac.getBean(Person.class);
 //
