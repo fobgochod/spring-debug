@@ -8,4 +8,9 @@
         <property name="name" value="zhangsan"/>
     </bean>
 
+    <bean id="person2" class="com.mashibing.lesson16.Person2" scope="prototype">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="lisi"/>
+    </bean>
+
 </beans>

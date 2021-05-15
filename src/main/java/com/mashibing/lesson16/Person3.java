@@ -11,7 +11,7 @@ public class Person3 {
         System.out.println("构造方法");
     }
 
-    @Autowired
+    @Autowired(required = false)
     public Person3(Integer id) {
         this.id = id;
     }
