@@ -1,6 +1,7 @@
-package com.mashibing.cycle;
+package com.mashibing.lesson20.cycle;
 
 public class C {
+
     private A a;
 
     public A getA() {
