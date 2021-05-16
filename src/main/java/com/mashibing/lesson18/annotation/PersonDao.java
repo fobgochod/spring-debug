@@ -1,4 +1,4 @@
-package com.mashibing.populateBean.annotation;
+package com.mashibing.lesson18.annotation;
 
 import org.springframework.stereotype.Repository;
 

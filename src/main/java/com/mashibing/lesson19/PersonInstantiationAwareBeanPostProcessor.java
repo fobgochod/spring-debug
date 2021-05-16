@@ -1,22 +1,20 @@
-package com.mashibing.populateBean;
+package com.mashibing.lesson19;
 
+import com.mashibing.lesson18.Person;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
-import org.springframework.stereotype.Component;
 
-@Component
 public class PersonInstantiationAwareBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
 
     @Override
     public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
-        System.out.println("PersonInstantiationAwareBeanPostProcessor---被调用执行");
         Person person = null;
-        if (bean instanceof Person){
+        if (bean instanceof Person) {
+            System.out.println("PersonInstantiationAwareBeanPostProcessor---After被调用执行");
             person = (Person) bean;
             person.setName("zhangsan");
-            return true;
-        }else{
-            return false;
+            // 返回false会终止后续执行
         }
+        return true;
     }
 }

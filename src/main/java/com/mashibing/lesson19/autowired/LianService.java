@@ -1,4 +1,4 @@
-package com.mashibing.selfAutowired;
+package com.mashibing.lesson19.autowired;
 
 import org.springframework.stereotype.Service;
 

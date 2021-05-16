@@ -1,4 +1,4 @@
-package com.mashibing.populateBean;
+package com.mashibing.lesson18;
 
 public class Address {
     private String province;

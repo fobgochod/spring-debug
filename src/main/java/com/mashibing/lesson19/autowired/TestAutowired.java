@@ -1,12 +1,12 @@
-package com.mashibing.selfAutowired;
+package com.mashibing.lesson19.autowired;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class Test {
+public class TestAutowired {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("testlian.xml");
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext("classpath:config/lesson19-autowired.xml");
         LianController bean = applicationContext.getBean(LianController.class);
         bean.show();
     }
