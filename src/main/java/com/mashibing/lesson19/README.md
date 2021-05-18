@@ -1,4 +1,4 @@
-# Lesson19
+# Lesson19 spring的bean创建流程七
 
 AbstractAutowireCapableBeanFactory.java:1442 applyPropertyValues(beanName, mbd, bw, pvs);
 

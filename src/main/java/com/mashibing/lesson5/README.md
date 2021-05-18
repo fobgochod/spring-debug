@@ -1,4 +1,4 @@
-# Lesson5
+# Lesson5 spring配置文件加载过程
 
 initBeanDefinitionReader(beanDefinitionReader); 适配器模式？
 

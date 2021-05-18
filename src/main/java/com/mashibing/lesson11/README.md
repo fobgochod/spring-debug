@@ -1,4 +1,4 @@
-# Lesson11
+# Lesson11 注册BeanPostProcesser
 
 ConfigurationClassParser.java:311
 

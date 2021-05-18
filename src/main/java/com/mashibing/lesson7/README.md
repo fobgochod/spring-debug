@@ -1,4 +1,4 @@
-# Lesson7
+# Lesson7 spring的bean工厂准备工作
 
 AbstractApplicationContext.java:526
 prepareBeanFactory(beanFactory);

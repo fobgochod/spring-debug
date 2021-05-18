@@ -1,4 +1,4 @@
-# Lesson12
+# Lesson12 spring的消息资源和监听器的初始化
 
 ## 国际化
 initMessageSource();
