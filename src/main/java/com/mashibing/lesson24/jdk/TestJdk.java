@@ -1,10 +1,13 @@
-package com.mashibing.proxy.jdk;
+package com.mashibing.lesson24.jdk;
 
-public class Test {
+import org.springframework.cglib.core.DebuggingClassWriter;
+
+public class TestJdk {
+
     public static void main(String[] args) {
         System.getProperties().put("sun.misc.ProxyGenerator.saveGeneratedFiles", "true");
         Calculator proxy = CalculatorProxy.getProxy(new MyCalculator());
-        proxy.add(1,1);
+        proxy.add(1, 1);
         System.out.println(proxy.getClass());
     }
 }

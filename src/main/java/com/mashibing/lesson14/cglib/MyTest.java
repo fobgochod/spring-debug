@@ -1,6 +1,5 @@
 package com.mashibing.lesson14.cglib;
 
-import com.mashibing.proxy.cglib.MyCglib;
 import org.springframework.cglib.proxy.Enhancer;
 
 /**

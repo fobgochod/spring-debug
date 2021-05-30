@@ -1,4 +1,4 @@
-package com.mashibing.lesson21;
+package com.mashibing.lesson25;
 
 import com.mashibing.lesson21.aop.xml.MyCalculator;
 import org.springframework.context.ApplicationContext;
@@ -10,7 +10,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @author seven
  * @date 2021/5/16
  */
-public class Lesson21 {
+public class Lesson25 {
 
     public static void main(String[] args) throws Exception {
         ApplicationContext ac = new ClassPathXmlApplicationContext("config/lesson21.xml");

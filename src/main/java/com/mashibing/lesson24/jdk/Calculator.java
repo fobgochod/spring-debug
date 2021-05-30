@@ -1,4 +1,4 @@
-package com.mashibing.proxy.jdk;
+package com.mashibing.lesson24.jdk;
 
 public interface Calculator {
 
