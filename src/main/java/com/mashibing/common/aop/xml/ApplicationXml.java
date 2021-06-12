@@ -7,7 +7,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 import java.lang.reflect.Field;
 import java.util.Properties;
 
-public class TestXmlAop {
+public class ApplicationXml {
 
     public static void main(String[] args) throws Exception {
         saveGeneratedCGlibProxyFiles(System.getProperty("user.dir")+"/proxy");

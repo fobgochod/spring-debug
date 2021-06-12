@@ -7,4 +7,4 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 @Configuration
 @ComponentScan(basePackages= "com.mashibing.common.aop.annotation")
 @EnableAspectJAutoProxy
-public class SpringConfiguration { }
+public class AopConfig { }
