@@ -1,1 +1,4 @@
 rootProject.name = 'spring-debug'
+include 'spring'
+include 'spring-mvc'
+
