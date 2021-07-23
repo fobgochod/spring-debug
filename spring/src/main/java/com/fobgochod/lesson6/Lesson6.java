@@ -12,10 +12,12 @@ public class Lesson6 {
         Person person = ac.getBean(Person.class);
         System.out.println("person = " + person);
 
-
         ac = new ClassPathXmlApplicationContext("classpath:config/lesson6-animal.xml");
         Cat cat = ac.getBean(Cat.class);
         System.out.println("cat = " + cat);
 
+        ApplicationContext myac = new MyClassPathXmlApplicationContext("classpath:config/lesson6-animal.xml");
+        Cat cat1 = myac.getBean(Cat.class);
+        System.out.println("cat1 = " + cat1);
     }
 }

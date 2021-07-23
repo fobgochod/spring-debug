@@ -12,5 +12,5 @@
         <property name="town" value="武安"/>
     </bean>
 
-    <context:component-scan base-package="com.mashibing.lesson18.annotation"/>
+    <context:component-scan base-package="com.fobgochod.lesson18.annotation"/>
 </beans>

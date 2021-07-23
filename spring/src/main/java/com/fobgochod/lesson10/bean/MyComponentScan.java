@@ -5,10 +5,10 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.core.annotation.Order;
 
 @Configuration
-@ComponentScan("com.mashibing.lesson9")
+@ComponentScan("com.fobgochod.lesson9")
 public class MyComponentScan {
 
-    @ComponentScan("com.mashibing.lesson9")
+    @ComponentScan("com.fobgochod.lesson9")
     @Configuration
     @Order(90)
     class InnerClass{
