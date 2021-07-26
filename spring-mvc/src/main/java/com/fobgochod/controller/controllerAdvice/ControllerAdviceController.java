@@ -19,14 +19,14 @@ import java.util.Map;
 @ControllerAdvice
 public class ControllerAdviceController {
 
-    //全局异常处理
-    @ExceptionHandler(Exception.class)
-    public ModelAndView customerException(Exception e){
-        ModelAndView mv = new ModelAndView();
-        mv.addObject("message",e.getMessage());
-        mv.setViewName("myerror");
-        return mv;
-    }
+//    //全局异常处理
+//    @ExceptionHandler(Exception.class)
+//    public ModelAndView customerException(Exception e){
+//        ModelAndView mv = new ModelAndView();
+//        mv.addObject("message",e.getMessage());
+//        mv.setViewName("myerror");
+//        return mv;
+//    }
 
     // 全局数据绑定
     @ModelAttribute(name="md")

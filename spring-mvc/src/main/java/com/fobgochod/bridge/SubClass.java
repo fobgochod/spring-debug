@@ -30,9 +30,9 @@ public class SubClass implements SuperClass<String>{
     }
 
     public static void main(String[] args) {
-//        SuperClass superClass = new SubClass();
-//        System.out.println(superClass.method("123"));
-//        System.out.println(superClass.method(new Object()));
+        SuperClass superClass = new SubClass();
+        System.out.println(superClass.method("123"));
+        System.out.println(superClass.method(new Object()));
     }
 
 }
