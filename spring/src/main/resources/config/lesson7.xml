@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="customer" class="com.fobgochod.lesson7.Customer">
-        <property name="name" value="zhangsan"></property>
-        <property name="address" value="河北省_邯郸市_武安市"></property>
+        <property name="name" value="zhangsan"/>
+        <property name="address" value="河北省_邯郸市_武安市"/>
     </bean>
-<!--    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
-<!--        <property name="propertyEditorRegistrars">-->
-<!--            <list>-->
-<!--                <bean class="com.AddressPropertyEditorRegistrar"></bean>-->
-<!--            </list>-->
-<!--        </property>-->
-<!--    </bean>-->
-    <bean class="org.springframework.beans.factory.config.CustomEditorConfigurer">
+
+    <!--    <bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">-->
+    <!--        <property name="propertyEditorRegistrars">-->
+    <!--            <list>-->
+    <!--                <bean class="com.fobgochod.lesson7.AddressPropertyEditorRegistrar"/>-->
+    <!--            </list>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+    <bean id="customEditorConfigurer" class="org.springframework.beans.factory.config.CustomEditorConfigurer">
         <property name="customEditors">
             <map>
-                <entry key="com.fobgochod.lesson7.Address">
-                    <value>com.fobgochod.lesson7.AddressPropertyEditor</value>
-                </entry>
+                <entry key="com.fobgochod.lesson7.Address" value="com.fobgochod.lesson7.AddressPropertyEditor"/>
             </map>
         </property>
     </bean>

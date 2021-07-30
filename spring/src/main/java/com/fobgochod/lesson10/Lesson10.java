@@ -11,7 +11,7 @@ public class Lesson10 {
 
         ApplicationContext ac = new MyClassPathXmlApplicationContext("config/lesson10.xml");
 
-        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.mashibing.lesson10");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext("com.fobgochod.lesson10");
         Person bean = context.getBean(Person.class);
         System.out.println("bean = " + bean);
     }
