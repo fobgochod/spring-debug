@@ -12,6 +12,7 @@ ConfigurationClassPostProcessor.java:319
 ->handler.processGroupImports()
 ->grouping.getImports()
 ->this.group.process
+->AutoConfigurationImportSelector.java:123
 
 
 SpringBoot
