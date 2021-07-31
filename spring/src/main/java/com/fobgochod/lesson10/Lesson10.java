@@ -1,6 +1,6 @@
 package com.fobgochod.lesson10;
 
-import com.fobgochod.lesson10.bean.Person;
+import com.fobgochod.lesson10.scan.Person;
 import com.fobgochod.lesson8.MyClassPathXmlApplicationContext;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

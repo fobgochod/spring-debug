@@ -43,4 +43,9 @@
         <!--        </mvc:interceptor>-->
         <bean class="com.fobgochod.interceptor.HandlerMappingInterceptor"/>
     </mvc:interceptors>
+
+
+    <bean class="com.fobgochod.controller.exception.MyExceptionHandlerExceptionResolver">
+        <property name="order" value="-1"></property>
+    </bean>
 </beans>
