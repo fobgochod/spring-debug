@@ -9,6 +9,8 @@ BeanNameGenerator.java
 BeanDefinition->AnnotatedBeanDefinition->ScannedGenericBeanDefinition
 BeanDefinition->AbstractBeanDefinition->GenericBeanDefinition
 
+![BeanDefinition.png](BeanDefinition.png)
+
 
 candidateIndicators
 =>

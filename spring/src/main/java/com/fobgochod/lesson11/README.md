@@ -40,6 +40,10 @@ ServletWebServerApplicationContext.java
 # BPP
 registerBeanPostProcessors(beanFactory);
 
+BeanDefinition.ROLE_APPLICATION
+BeanDefinition.ROLE_SUPPORT
+BeanDefinition.ROLE_INFRASTRUCTURE
+
 BeanPostProcessor
 ->DestructionAwareBeanPostProcessor
 ->MergedBeanDefinitionPostProcessor
