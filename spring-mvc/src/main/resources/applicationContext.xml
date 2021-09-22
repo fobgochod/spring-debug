@@ -7,18 +7,20 @@
        http://www.springframework.org/schema/beans/spring-beans.xsd
        http://www.springframework.org/schema/context
        https://www.springframework.org/schema/context/spring-context.xsd
-        http://www.springframework.org/schema/mvc
-        https://www.springframework.org/schema/mvc/spring-mvc.xsd">
+       http://www.springframework.org/schema/mvc
+       https://www.springframework.org/schema/mvc/spring-mvc.xsd">
 
-    <!--    <bean id="simpleUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">-->
-    <!--        <property name="mappings">-->
-    <!--            <props>-->
-    <!--                <prop key="/userlist">userController</prop>-->
-    <!--            </props>-->
-    <!--        </property>-->
-    <!--    </bean>-->
+    <bean name="/test01" class="com.fobgochod.controller.controller.Test01"/>
+    <bean id="/test02" class="com.fobgochod.controller.controller.Test02"/>
 
-    <!--    <bean id="userController" class="com.fobgochod.controller.HelloController2" />-->
+    <bean id="userController2" class="com.fobgochod.controller.controller.UserController2"/>
+    <bean id="simpleUrlMapping" class="org.springframework.web.servlet.handler.SimpleUrlHandlerMapping">
+        <property name="mappings">
+            <props>
+                <prop key="/userlist2">userController2</prop>
+            </props>
+        </property>
+    </bean>
 
     <context:component-scan base-package="com.fobgochod"/>
     <mvc:default-servlet-handler/>
@@ -28,24 +30,24 @@
         <property name="prefix" value="/WEB-INF/jsp/"/>
         <property name="suffix" value=".jsp"/>
     </bean>
+
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
-        <property name="maxUploadSize" value="17367648787"></property>
-        <property name="defaultEncoding" value="UTF-8"></property>
+        <property name="maxUploadSize" value="17367648787"/>
+        <property name="defaultEncoding" value="UTF-8"/>
     </bean>
-    <bean name="/test01" class="com.fobgochod.controller.testController.Test01"></bean>
-    <bean id="/test02" class="com.fobgochod.controller.testController.Test02"></bean>
+
+    <bean class="com.fobgochod.controller.exception.MyNullPointerExceptionExceptionResolver">
+        <property name="order" value="-1"/>
+    </bean>
 
     <mvc:interceptors>
         <!--配置的拦截器可以对具体的请求做限制，不一定所有的请求都要经过此拦截器，按照需求来指定即可-->
-        <!--        <mvc:interceptor>-->
-        <!--            <mvc:mapping path="/test01"/>-->
-        <!--            <bean class="com.fobgochod.interceptor.HandlerMappingInterceptor"></bean>-->
-        <!--        </mvc:interceptor>-->
+        <!--
+        <mvc:interceptor>
+            <mvc:mapping path="/test01"/>
+            <bean class="com.fobgochod.interceptor.HandlerMappingInterceptor"></bean>
+        </mvc:interceptor>
+        -->
         <bean class="com.fobgochod.interceptor.HandlerMappingInterceptor"/>
     </mvc:interceptors>
-
-
-    <bean class="com.fobgochod.controller.exception.MyExceptionHandlerExceptionResolver">
-        <property name="order" value="-1"></property>
-    </bean>
 </beans>

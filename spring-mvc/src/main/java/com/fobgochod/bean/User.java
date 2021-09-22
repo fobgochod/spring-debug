@@ -4,39 +4,59 @@ import java.io.Serializable;
 
 public class User implements Serializable {
 
-
-    private static final long serialVersionUID = 2427258281767093876L;
-    private String username;
-    private int age;
+    private Integer id;
+    private String name;
+    private String password;
+    private Integer age;
 
     public User() {
+        this.id = System.identityHashCode(this);
     }
 
-    public User(String username, int age) {
-        this.username = username;
+    public User(String name, int age) {
+        this();
+        this.name = name;
         this.age = age;
     }
 
-    public String getUsername() {
-        return username;
+    public Integer getId() {
+        return id;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setId(Integer id) {
+        this.id = id;
     }
 
-    public int getAge() {
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
+    public Integer getAge() {
         return age;
     }
 
-    public void setAge(int age) {
+    public void setAge(Integer age) {
         this.age = age;
     }
 
     @Override
     public String toString() {
         return "User{" +
-                "username='" + username + '\'' +
+                "id=" + id +
+                ", username='" + name + '\'' +
+                ", password='" + password + '\'' +
                 ", age=" + age +
                 '}';
     }

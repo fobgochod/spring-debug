@@ -19,31 +19,31 @@ import java.util.Map;
 @ControllerAdvice
 public class ControllerAdviceController {
 
-//    //全局异常处理
-//    @ExceptionHandler(Exception.class)
-//    public ModelAndView customerException(Exception e){
-//        ModelAndView mv = new ModelAndView();
-//        mv.addObject("message",e.getMessage());
-//        mv.setViewName("myerror");
-//        return mv;
-//    }
+    //全局异常处理
+    @ExceptionHandler(Exception.class)
+    public ModelAndView globalException(Exception e) {
+        ModelAndView mv = new ModelAndView();
+        mv.addObject("message", "Global Exception Handler Error");
+        mv.setViewName("error");
+        return mv;
+    }
 
     // 全局数据绑定
-    @ModelAttribute(name="md")
-    public Map<String,Object> mydata(){
-        HashMap<String,Object> map = new HashMap<>();
-        map.put("age",99);
-        map.put("gender","男");
+    @ModelAttribute(name = "gd")
+    public Map<String, Object> globalData() {
+        HashMap<String, Object> map = new HashMap<>();
+        map.put("password", 9999);
+        map.put("gender", "男");
         return map;
     }
 
     @InitBinder("a")
-    public void a(WebDataBinder binder){
+    public void globalA(WebDataBinder binder) {
         binder.setFieldDefaultPrefix("a.");
     }
 
     @InitBinder("b")
-    public void b(WebDataBinder binder){
+    public void globalB(WebDataBinder binder) {
         binder.setFieldDefaultPrefix("b.");
     }
 }

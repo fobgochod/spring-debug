@@ -1,7 +1,8 @@
 package com.fobgochod.adapter;
 
-public class AnnotationController implements Controller{
-    public void doAnnotationHandler(){  
-        System.out.println("annotation...");  
-    }  
-}  
+public class AnnotationController implements Controller {
+
+    public void doAnnotationHandler() {
+        System.out.println("annotation...");
+    }
+}
