@@ -12,9 +12,14 @@ import java.util.Map;
 
 /**
  * 使用@ControllerAdvice注解的Controller是一个增强的Controller，主要有三个功能
- * 1、全局异常处理
- * 2、全局数据绑定
- * 3、全局数据预处理
+ * <ol>
+ *     <li>全局异常处理 {@link ExceptionHandler}</li>
+ *     <li>全局数据绑定 {@link InitBinder}</li>
+ *     <li>全局数据预处理 {@link ModelAttribute}</li>
+ * </ol>
+ *
+ * @author Xiao
+ * @date 2021/9/24 0:41
  */
 @ControllerAdvice
 public class ControllerAdviceController {

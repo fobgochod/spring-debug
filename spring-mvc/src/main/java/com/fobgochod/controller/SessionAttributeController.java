@@ -43,6 +43,6 @@ public class SessionAttributeController {
         logger.info(modelMap.get("book"));
         logger.info(modelMap.get("description"));
         logger.info(modelMap.get("price"));
-        return "index";
+        return "success";
     }
 }

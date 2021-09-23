@@ -1,4 +1,5 @@
 rootProject.name = 'spring-debug'
+include 'servlet'
 include 'spring'
 include 'spring-boot'
 include 'spring-mvc'

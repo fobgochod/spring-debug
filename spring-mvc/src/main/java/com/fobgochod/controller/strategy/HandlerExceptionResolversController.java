@@ -23,7 +23,7 @@ public class HandlerExceptionResolversController {
 
     @RequestMapping("/exception/handler")
     public ModelAndView exception(ModelAndView view) throws ClassNotFoundException {
-        view.setViewName("index");
+        view.setViewName("success");
         throw new ClassNotFoundException("class not found");
     }
 

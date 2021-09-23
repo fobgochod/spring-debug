@@ -12,7 +12,7 @@ public class NullPointerController {
 
     @RequestMapping("/nullpointer")
     public ModelAndView nullpointer(ModelAndView view) {
-        view.setViewName("index");
+        view.setViewName("success");
         String str = null;
         str.length();
         return view;
