@@ -1,6 +1,6 @@
 package com.fobgochod.lesson21;
 
-import com.fobgochod.lesson21.aop.xml.MyCalculator;
+import com.fobgochod.common.aop.xml.MyCalculator;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 

@@ -11,7 +11,7 @@ public class IndexController extends BaseController implements Controller {
 
     /**
      * ConfigurationClassParser.java:325
-     * // Process individual @Bean methods
+     * Process individual @Bean methods
      *
      * @see org.springframework.context.annotation.ConfigurationClassParser
      */

@@ -12,6 +12,7 @@ DefaultSingletonBeanRegistry
 
 
 ![BeanPostProcessor](BeanPostProcessor.png)
+![BeanPostProcessor1](BeanPostProcessor1.png)
 
 
 ## 创建对象

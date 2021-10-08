@@ -7,9 +7,7 @@
         <property name="banana" ref="banana"/>
     </bean>
 
-    <bean id="banana" class="com.fobgochod.lesson14.lookup.Banana" scope="prototype">
-
-    </bean>
+    <bean id="banana" class="com.fobgochod.lesson14.lookup.Banana" scope="prototype"/>
 
     <bean id="fruitplate1" class="com.fobgochod.lesson14.lookup.FruitPlate">
         <lookup-method name="getFruit" bean="apple"/>

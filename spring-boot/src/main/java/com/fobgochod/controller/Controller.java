@@ -7,7 +7,7 @@ public interface Controller {
 
     /**
      * ConfigurationClassParser.java:331
-     * // Process default methods on interfaces
+     * Process default methods on interfaces
      *
      * @see org.springframework.context.annotation.ConfigurationClassParser
      */

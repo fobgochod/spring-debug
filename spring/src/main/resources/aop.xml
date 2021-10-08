@@ -9,16 +9,27 @@
 
     <bean id="logUtil" class="com.fobgochod.common.aop.xml.LogUtil"/>
     <bean id="myCalculator" class="com.fobgochod.common.aop.xml.MyCalculator"/>
+    <bean id="secondCalculator" class="com.fobgochod.common.aop.xml.SecondCalculator"/>
 
     <aop:config>
         <aop:aspect ref="logUtil">
-            <aop:pointcut id="myPoint"
-                          expression="execution( Integer com.fobgochod.common.aop.xml.MyCalculator.*  (..))"/>
-            <aop:around method="around" pointcut-ref="myPoint"/>
-            <aop:before method="start" pointcut-ref="myPoint"/>
-            <aop:after method="logFinally" pointcut-ref="myPoint"/>
-            <aop:after-returning method="stop" pointcut-ref="myPoint" returning="result"/>
-            <aop:after-throwing method="logException" pointcut-ref="myPoint" throwing="e"/>
+            <aop:pointcut id="aspectPointCut"
+                          expression="execution(public Integer com.fobgochod.common.aop.xml.MyCalculator.*(Integer,Integer))"/>
+            <aop:around method="aspectAround" pointcut-ref="aspectPointCut"/>
+            <aop:before method="aspectBefore" pointcut-ref="aspectPointCut"/>
+            <aop:after method="aspectAfter" pointcut-ref="aspectPointCut"/>
+            <aop:after-returning method="aspectAfterReturning" pointcut-ref="aspectPointCut" returning="result"/>
+            <aop:after-throwing method="aspectAfterThrowing" pointcut-ref="aspectPointCut" throwing="e"/>
+        </aop:aspect>
+
+        <aop:aspect ref="logUtil">
+            <aop:pointcut id="aspectPointCut2"
+                          expression="execution(public Integer com.fobgochod.common.aop.xml.SecondCalculator.*(Integer,Integer))"/>
+            <aop:around method="aspectAround" pointcut-ref="aspectPointCut2"/>
+            <aop:before method="aspectBefore" pointcut-ref="aspectPointCut2"/>
+            <aop:after method="aspectAfter" pointcut-ref="aspectPointCut2"/>
+            <aop:after-returning method="aspectAfterReturning" pointcut-ref="aspectPointCut2" returning="result"/>
+            <aop:after-throwing method="aspectAfterThrowing" pointcut-ref="aspectPointCut2" throwing="e"/>
         </aop:aspect>
     </aop:config>
 

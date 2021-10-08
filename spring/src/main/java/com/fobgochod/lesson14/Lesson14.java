@@ -1,5 +1,6 @@
 package com.fobgochod.lesson14;
 
+import com.fobgochod.common.CGlibUtils;
 import com.fobgochod.lesson14.lookup.Apple;
 import com.fobgochod.lesson14.lookup.FruitPlate;
 import com.fobgochod.lesson14.replace.OriginalDog;
@@ -16,7 +17,8 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class Lesson14 {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws Exception {
+        CGlibUtils.generatedCGlibProxyFiles("lookup");
         ApplicationContext ac = new ClassPathXmlApplicationContext("config/lesson14.xml");
 
         Apple bean = ac.getBean(Apple.class);

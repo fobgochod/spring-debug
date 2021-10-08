@@ -29,9 +29,9 @@
         <!--
         <mvc:interceptor>
             <mvc:mapping path="/test01"/>
-            <bean class="com.fobgochod.interceptor.HandlerMappingInterceptor"/>
+            <bean class="com.fobgochod.interceptor.MyOneHandlerInterceptor"/>
         </mvc:interceptor>
         -->
-        <bean class="com.fobgochod.interceptor.HandlerMappingInterceptor"/>
+        <bean class="com.fobgochod.interceptor.MyOneHandlerInterceptor"/>
     </mvc:interceptors>
 </beans>

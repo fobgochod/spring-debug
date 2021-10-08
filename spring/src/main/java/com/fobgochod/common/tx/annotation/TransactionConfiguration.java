@@ -15,7 +15,7 @@ import javax.sql.DataSource;
 @Configuration
 @PropertySource("classpath:dbconfig.properties")
 @EnableTransactionManagement
-public class TxConfig {
+public class TransactionConfiguration {
 
     @Value("${jdbc.driverClassName}")
     private String driverClassname;
