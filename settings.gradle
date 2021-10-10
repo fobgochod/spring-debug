@@ -3,4 +3,4 @@ include 'servlet'
 include 'spring'
 include 'spring-boot'
 include 'spring-mvc'
-
+include 'gradle-debug'

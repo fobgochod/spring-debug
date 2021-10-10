@@ -1,0 +1,89 @@
+//脚本插件
+apply from: 'other.gradle'
+
+task test01 {
+    doLast {
+        println "vsersion:$version, url:$url"
+    }
+}
+
+// 二进制插件
+// 自定义插件01
+apply plugin: HelloPlugin
+
+class HelloPlugin implements Plugin<Project> {
+
+    void apply(Project project) {
+        project.task('test01_01') {
+            doLast {
+                println "hello from the HelloPlugin."
+            }
+        }
+    }
+}
+
+
+// 自定义插件01
+apply plugin: HelloPlugin2
+
+//greeting {
+//    message = "hello 01"
+//}
+
+greeting.message = "hello 02"
+
+class HelloPlugin2 implements Plugin<Project> {
+
+    void apply(Project project) {
+        project.extensions.create("greeting", HelloPluginExtension)
+
+        project.task('test01_02') {
+            doLast {
+                println project.greeting.message
+            }
+        }
+    }
+}
+
+class HelloPluginExtension {
+    String message;
+}
+
+
+// 字符串大写
+task test02 {
+    doLast {
+        String str = 'hello world'
+        println "original: " + str
+        println "upper case: " + str.toUpperCase()
+    }
+}
+
+// 循环
+task test03 {
+    doLast {
+        4.times {
+            print "$it "
+        }
+    }
+}
+
+// build三个阶段 Initialization Configuration Execution
+task test04_01 {
+    println "this is the first gradle"
+}
+
+task test04_02 {
+    doLast {
+        println "this is the second gradle"
+    }
+}
+
+// doLast是第三阶段
+println "this is the stage1: Initialization"
+task test04_03 {
+    println "this is the stage2: Configuration"
+    doLast {
+        println "this is the stage3: Execution"
+    }
+}

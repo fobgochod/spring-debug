@@ -1,22 +1,47 @@
 plugins {
-    id 'java'
     id 'war'
 }
 description = "Spring MVC Debug"
 
 dependencies {
 
-    implementation 'javax.servlet:javax.servlet-api:3.1.0'
-//    implementation 'javax.servlet.jsp.jstl:jstl:1.2'
-    implementation 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api:1.2.1'
-    implementation 'org.apache.taglibs:taglibs-standard-spec:1.2.5'
-    implementation 'org.apache.taglibs:taglibs-standard-impl:1.2.5'
-    implementation 'commons-fileupload:commons-fileupload:1.4'
-    implementation 'com.fasterxml.jackson.core:jackson-databind:2.12.3'
-    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.12.3'
-    implementation 'com.fasterxml.jackson.core:jackson-core:2.12.3'
-    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml:2.12.3'
-    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.12.3'
-    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor:2.12.3'
+    implementation 'org.springframework:spring-aop'
+    implementation 'org.springframework:spring-aspects'
+    implementation 'org.springframework:spring-beans'
+    implementation 'org.springframework:spring-context'
+    implementation 'org.springframework:spring-context-support'
+    implementation 'org.springframework:spring-core'
+    implementation 'org.springframework:spring-expression'
+    implementation 'org.springframework:spring-instrument'
+    implementation 'org.springframework:spring-jcl'
+    implementation 'org.springframework:spring-jdbc'
+    implementation 'org.springframework:spring-jms'
+    implementation 'org.springframework:spring-messaging'
+    implementation 'org.springframework:spring-orm'
+    implementation 'org.springframework:spring-oxm'
+    implementation 'org.springframework:spring-test'
+    implementation 'org.springframework:spring-tx'
+    implementation 'org.springframework:spring-web'
+    implementation 'org.springframework:spring-webflux'
+    implementation 'org.springframework:spring-webmvc'
+    implementation 'org.springframework:spring-websocket'
 
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations'
+    implementation 'com.fasterxml.jackson.core:jackson-core'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-xml'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile'
+    implementation 'com.fasterxml.jackson.dataformat:jackson-dataformat-cbor'
+
+    testImplementation 'junit:junit'
+
+    implementation 'org.aspectj:aspectjweaver'
+    implementation 'com.alibaba:druid'
+    implementation 'mysql:mysql-connector-java'
+
+    implementation 'javax.servlet:javax.servlet-api'
+    implementation 'javax.servlet.jsp.jstl:javax.servlet.jsp.jstl-api'
+    implementation 'org.apache.taglibs:taglibs-standard-spec'
+    implementation 'org.apache.taglibs:taglibs-standard-impl'
+    implementation 'commons-fileupload:commons-fileupload'
 }

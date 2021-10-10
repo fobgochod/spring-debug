@@ -1,0 +1,4 @@
+ext {
+    version = '1.0.0'
+    url = 'http://fobgochod.com'
+}

@@ -1,10 +1,14 @@
-plugins {
-    id 'java'
-}
-
 description = "Spring Boot"
 
 dependencies {
+    implementation 'org.springframework:spring-aop'
+    annotationProcessor 'org.springframework:spring-context-indexer'
+
     implementation 'org.springframework.boot:spring-boot-starter-web:2.3.4.RELEASE'
     testImplementation 'org.springframework.boot:spring-boot-starter-test:2.3.4.RELEASE'
+}
+
+
+hello.doLast {
+    println "--- I'm spring boot."
 }
