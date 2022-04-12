@@ -1,6 +1,7 @@
 description = "Spring Boot"
 
 dependencies {
+    implementation 'org.aspectj:aspectjweaver'
     implementation 'org.springframework:spring-aop'
     annotationProcessor 'org.springframework:spring-context-indexer'
 

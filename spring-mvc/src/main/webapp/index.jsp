@@ -18,6 +18,7 @@
         td, th {
             border: 1px solid #dfe2e5;
             padding: .6em 1em;
+            text-align: left;
         }
     </style>
 </head>

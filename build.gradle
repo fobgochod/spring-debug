@@ -11,8 +11,7 @@ allprojects {
     version '1.0.0'
 
     task hello {
-        doLast {
-            task -> println "I'm $task.project.name"
+        doLast { task -> println "I'm $task.project.name"
         }
     }
 }
