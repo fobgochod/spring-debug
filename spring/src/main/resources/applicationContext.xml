@@ -5,28 +5,6 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context  http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <!--    <msb:user id="msb" userName="lian" email="lian@msb.com" password="123456"></msb:user>-->
-    <context:component-scan base-package="com.fobgochod"></context:component-scan>
-    <bean id="user" class="com.fobgochod.lesson15.supplier.User"></bean>
-    <context:property-placeholder location="classpath:db.properties"></context:property-placeholder>
-    <!--    <bean id="person2" class="com.Person" depends-on="">-->
-    <!--        <constructor-arg index="0" value="2">-->
-    <!--        </constructor-arg>-->
-    <!--        <constructor-arg index="1" value="lisi"></constructor-arg>-->
-    <!--    </bean>-->
-    <bean id="person" class="com.fobgochod.Person" scope="prototype">
-        <property name="id" value="1"></property>
-        <property name="name" value="zhangsan"></property>
-    </bean>
-    <bean name="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-        <property name="username" value="${jdbc.username}"></property>
-    </bean>
+    <context:component-scan base-package="com.fobgochod.annotation"/>
 
-    <!--    <bean class="com.MyBeanFactoryPostProcessor"></bean>-->
-    <!--    <bean id="a" class="com.fobgochod.cycle.A" scope="prototype">-->
-    <!--        <property name="b" ref="b"></property>-->
-    <!--    </bean>-->
-    <!--    <bean id="b" class="com.fobgochod.cycle.B" scope="prototype">-->
-    <!--        <property name="a" ref="a"></property>-->
-    <!--    </bean>-->
 </beans>

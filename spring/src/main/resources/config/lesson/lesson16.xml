@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="populatePojo" class="com.fobgochod.lesson.lesson16.Person" scope="prototype">
+        <property name="id" value="1"/>
+        <property name="name" value="zhangsan"/>
+    </bean>
+
+    <bean id="factoryMethodPojo2" class="com.fobgochod.lesson.lesson16.Person2" scope="prototype">
+        <constructor-arg name="id" value="1"/>
+        <constructor-arg name="name" value="lisi"/>
+    </bean>
+
+</beans>

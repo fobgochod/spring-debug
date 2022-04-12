@@ -58,6 +58,10 @@
         <td>拦截器</td>
         <td><a href="interceptor">Interceptor Chains</a></td>
     </tr>
+    <tr>
+        <td>线程信息</td>
+        <td><a href="thread.jsp">Java Thread Info</a></td>
+    </tr>
 </table>
 
 </body>

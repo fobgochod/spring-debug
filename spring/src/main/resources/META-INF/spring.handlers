@@ -1,1 +1,2 @@
-http\://www.fobgochod.com/schema/animal=com.fobgochod.lesson6.AnimalNamespaceHandler
+http\://www.fobgochod.com/schema/animal=com.fobgochod.lesson.lesson6.AnimalNamespaceHandler
+http\://www.fobgochod.com/schema/anime=com.fobgochod.annotation.namespace.handler.AnimeNamespaceHandler

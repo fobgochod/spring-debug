@@ -28,4 +28,6 @@ dependencies {
     implementation 'org.aspectj:aspectjweaver'
     implementation 'com.alibaba:druid'
     implementation 'mysql:mysql-connector-java'
+
+    implementation 'javax.annotation:javax.annotation-api'
 }
