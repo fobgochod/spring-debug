@@ -1,13 +1,13 @@
 package com.fobgochod.annotation.populatebean.populate.service.impl;
 
 import com.fobgochod.annotation.populatebean.populate.domain.PopulatePojo;
-import com.fobgochod.annotation.populatebean.populate.service.populateService;
+import com.fobgochod.annotation.populatebean.populate.service.PopulateService;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Primary
 @Service
-public class PrimaryServiceImpl implements populateService {
+public class PrimaryServiceImpl implements PopulateService {
 
     @Override
     public PopulatePojo info(String name) {

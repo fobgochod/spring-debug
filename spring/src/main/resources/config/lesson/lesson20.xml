@@ -3,11 +3,11 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd">
 
-    <bean id="cycleOne" class="com.fobgochod.lesson.lesson20.cycle.A">
-        <property name="cycleTwo" ref="cycleTwo"/>
+    <bean id="cycleA" class="com.fobgochod.lesson.lesson20.cycle.A">
+        <property name="b" ref="cycleB"/>
     </bean>
-    <bean id="cycleTwo" class="com.fobgochod.lesson.lesson20.cycle.B">
-        <property name="cycleOne" ref="cycleOne"/>
+    <bean id="cycleB" class="com.fobgochod.lesson.lesson20.cycle.B">
+        <property name="a" ref="cycleA"/>
     </bean>
 
     <bean id="logger" class="com.fobgochod.lesson.lesson20.Logger"/>
@@ -15,7 +15,7 @@
     <!-- 切面：切入点和通知 -->
     <aop:config>
         <aop:aspect id="logger" ref="logger">
-            <aop:pointcut expression="execution(* com.fobgochod.lesson20.cycle.*.*(..))" id="method"/>
+            <aop:pointcut expression="execution(* com.fobgochod.lesson.lesson20.cycle.*.name(..))" id="method"/>
             <aop:before method="recordBefore" pointcut-ref="method"/>
             <aop:after method="recordAfter" pointcut-ref="method"/>
         </aop:aspect>

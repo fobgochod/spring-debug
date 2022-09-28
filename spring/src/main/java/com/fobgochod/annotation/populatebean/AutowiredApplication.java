@@ -1,7 +1,7 @@
 package com.fobgochod.annotation.populatebean;
 
 import com.fobgochod.annotation.populatebean.populate.domain.PopulatePojo;
-import com.fobgochod.annotation.populatebean.populate.service.populateService;
+import com.fobgochod.annotation.populatebean.populate.service.PopulateService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -32,6 +32,8 @@ import org.springframework.context.annotation.Configuration;
  * @author Xiao
  * @date 2022/4/9 13:37
  * @see AutowiredAnnotationBeanPostProcessor
+ * @see org.springframework.beans.factory.support.AbstractBeanDefinition
+ * @see org.springframework.beans.factory.config.AutowireCapableBeanFactory
  */
 @Configuration
 @ComponentScan("com.fobgochod.annotation.populatebean.populate")
@@ -39,7 +41,7 @@ public class AutowiredApplication {
 
     @Autowired
     @Qualifier("qualifierServiceImpl")
-    private populateService populateService;
+    private PopulateService populateService;
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();

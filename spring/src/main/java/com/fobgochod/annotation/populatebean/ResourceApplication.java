@@ -1,7 +1,7 @@
 package com.fobgochod.annotation.populatebean;
 
 import com.fobgochod.annotation.populatebean.populate.domain.PopulatePojo;
-import com.fobgochod.annotation.populatebean.populate.service.populateService;
+import com.fobgochod.annotation.populatebean.populate.service.PopulateService;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.annotation.CommonAnnotationBeanPostProcessor;
@@ -13,10 +13,11 @@ import javax.annotation.Resource;
 /**
  * ResourceApplication.java
  * <p>
- * 1、按名称匹配
+ * 1、如指定name属性指定名称，则按按名称匹配
  * <p>
- * 如果没有：
- * 2、按照@Autowired流程处理
+ * 2、如果没有指定name属性
+ * 2.1 先按名称匹配
+ * 2.2、如果没有：按照@Autowired流程处理
  *
  * @author Xiao
  * @date 2022/4/9 13:37
@@ -26,9 +27,9 @@ import javax.annotation.Resource;
 @ComponentScan("com.fobgochod.annotation.populatebean.populate")
 public class ResourceApplication {
 
-    @Resource
+    @Resource(name = "byNameServiceImpl")
     @Qualifier("qualifierServiceImpl")
-    private populateService byNameServiceImpl;
+    private PopulateService populateService;
 
     public static void main(String[] args) {
         AnnotationConfigApplicationContext ac = new AnnotationConfigApplicationContext();
@@ -36,7 +37,7 @@ public class ResourceApplication {
         ac.refresh();
 
         ResourceApplication app = ac.getBean(ResourceApplication.class);
-        PopulatePojo populatePojo = app.byNameServiceImpl.info(Resource.class.getSimpleName());
+        PopulatePojo populatePojo = app.populateService.info(Resource.class.getSimpleName());
         System.out.println("populatePojo = " + populatePojo);
     }
 }
