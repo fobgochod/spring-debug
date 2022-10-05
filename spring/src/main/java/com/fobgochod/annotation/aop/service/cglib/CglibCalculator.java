@@ -1,13 +1,18 @@
 package com.fobgochod.annotation.aop.service.cglib;
 
+import com.fobgochod.annotation.aop.config.AopLogUtil;
 import org.springframework.stereotype.Service;
 
 @Service
 public class CglibCalculator {
 
-    public Integer add(Integer i, Integer j) throws NoSuchMethodException {
-        Integer result = i + j;
-        System.out.printf("%s.add(%s, %s) = %s%n", this.getClass().getName(), i, j, result);
+    public int add(int a, int b) throws NoSuchMethodException {
+        int result = a + b;
+        AopLogUtil.printLog("", 3, CglibCalculator.class, "add", new Object[]{a, b}, result);
+
+        if (result == 2) {
+            throw new RuntimeException("测试@AfterThrowing");
+        }
         return result;
     }
 }

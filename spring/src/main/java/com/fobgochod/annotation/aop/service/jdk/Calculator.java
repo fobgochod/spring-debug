@@ -2,5 +2,5 @@ package com.fobgochod.annotation.aop.service.jdk;
 
 public interface Calculator {
 
-    Integer add(Integer i, Integer j) throws NoSuchMethodException;
+    int add(int a, int b) throws NoSuchMethodException;
 }
