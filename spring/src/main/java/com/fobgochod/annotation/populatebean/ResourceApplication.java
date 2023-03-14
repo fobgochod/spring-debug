@@ -18,6 +18,9 @@ import javax.annotation.Resource;
  * 2、如果没有指定name属性
  * 2.1 先按名称匹配
  * 2.2、如果没有：按照@Autowired流程处理
+ * <p>
+ * <p>
+ * autowireResource(this.resourceFactory, element, requestingBeanName)
  *
  * @author Xiao
  * @date 2022/4/9 13:37
