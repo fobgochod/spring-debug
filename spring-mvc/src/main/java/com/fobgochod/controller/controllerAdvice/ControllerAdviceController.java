@@ -18,8 +18,7 @@ import java.util.Map;
  *     <li>全局数据预处理 {@link ModelAttribute}</li>
  * </ol>
  *
- * @author Xiao
- * @date 2021/9/24 0:41
+ * @author fobgochod
  */
 @ControllerAdvice
 public class ControllerAdviceController {

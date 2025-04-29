@@ -5,11 +5,6 @@ import org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser;
 import org.springframework.util.StringUtils;
 import org.w3c.dom.Element;
 
-/**
- * @auther: Xiao
- * @date: 2021/4/7 21:37
- * @description: 功能描述
- */
 public class CatBeanDefinitionParser extends AbstractSingleBeanDefinitionParser {
 
     @Override

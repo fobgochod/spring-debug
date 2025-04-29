@@ -22,8 +22,7 @@ import javax.annotation.Resource;
  * <p>
  * autowireResource(this.resourceFactory, element, requestingBeanName)
  *
- * @author Xiao
- * @date 2022/4/9 13:37
+ * @author fobgochod
  * @see CommonAnnotationBeanPostProcessor
  */
 @Configuration

@@ -7,8 +7,7 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 /**
  *  TransactionApplication.java
  *
- * @author Xiao
- * @date 2022/4/13 0:20
+ * @author fobgochod
  */
 public class TransactionApplication {
 

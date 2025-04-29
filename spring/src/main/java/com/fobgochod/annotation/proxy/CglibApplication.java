@@ -8,8 +8,7 @@ import org.springframework.cglib.proxy.Enhancer;
 /**
  * Cglib动态代理
  *
- * @author seven
- * @date 2021/4/29
+ * @author fobgochod
  */
 public class CglibApplication {
 

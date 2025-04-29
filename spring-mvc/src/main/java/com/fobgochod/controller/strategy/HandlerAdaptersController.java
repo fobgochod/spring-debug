@@ -5,8 +5,7 @@ import org.springframework.stereotype.Controller;
 /**
  * HandlerAdaptersController.java
  *
- * @author Xiao
- * @date 2021/9/21 20:52
+ * @author fobgochod
  * @see org.springframework.web.servlet.mvc.HttpRequestHandlerAdapter
  * @see org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter,
  * @see org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter

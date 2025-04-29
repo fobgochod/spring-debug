@@ -13,8 +13,7 @@ import org.springframework.stereotype.Component;
  * 通过注解实现AOP
  * 排序规则：{@link ReflectiveAspectJAdvisorFactory#adviceMethodComparator}
  *
- * @author Xiao
- * @date 2022/10/5 12:35
+ * @author fobgochod
  * @see AnnotationAwareAspectJAutoProxyCreator
  */
 @Aspect

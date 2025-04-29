@@ -8,8 +8,7 @@ import java.util.Properties;
 /**
  * CGlibUtils.java
  *
- * @author Xiao
- * @date 2021/10/4 17:36
+ * @author fobgochod
  */
 public class CGlibUtils {
 

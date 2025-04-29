@@ -10,8 +10,7 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 /**
  * CycleApplication.java
  *
- * @author Xiao
- * @date 2022/4/9 21:17
+ * @author fobgochod
  */
 @Configuration
 @ComponentScan("com.fobgochod.annotation.circularreference")

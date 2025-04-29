@@ -13,8 +13,7 @@ import org.springframework.stereotype.Component;
  * 通过注解实现AOP
  * 排序规则：{@link ReflectiveAspectJAdvisorFactory#adviceMethodComparator}
  *
- * @author Xiao
- * @date 2022/10/5 12:35
+ * @author fobgochod
  * @see AnnotationAwareAspectJAutoProxyCreator
  */
 @Aspect
@@ -33,7 +32,7 @@ public class AopAspect {
         Object result = null;
         try {
             AopLogUtil.annotationLog(1, Around.class, signature.getName(), pjp.getArgs(), null);
-            //通过反射的方式调用目标的方法，相当于执行method.invoke(),可以自己修改结果值
+            // 通过反射的方式调用目标的方法，相当于执行method.invoke(),可以自己修改结果值
             result = pjp.proceed(args);
 
             AopLogUtil.annotationLog(6, Around.class, signature.getName(), args, result);
@@ -45,9 +44,9 @@ public class AopAspect {
 
     @Before(value = "pointCut()")
     private int beforeMethod2(JoinPoint joinPoint) {
-        //获取方法签名
+        // 获取方法签名
         Signature signature = joinPoint.getSignature();
-        //获取参数信息
+        // 获取参数信息
         Object[] args = joinPoint.getArgs();
 
         AopLogUtil.annotationLog(22, Before.class, signature.getName(), args, null);
@@ -56,9 +55,9 @@ public class AopAspect {
 
     @Before(value = "pointCut()")
     private int beforeMethod1(JoinPoint joinPoint) {
-        //获取方法签名
+        // 获取方法签名
         Signature signature = joinPoint.getSignature();
-        //获取参数信息
+        // 获取参数信息
         Object[] args = joinPoint.getArgs();
 
         AopLogUtil.annotationLog(21, Before.class, signature.getName(), args, null);

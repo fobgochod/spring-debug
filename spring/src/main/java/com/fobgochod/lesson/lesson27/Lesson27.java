@@ -1,15 +1,14 @@
 package com.fobgochod.lesson.lesson27;
 
-import com.fobgochod.util.CGlibUtils;
 import com.fobgochod.lesson.lesson27.service.BookService;
+import com.fobgochod.util.CGlibUtils;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
  * 把xml配置的方式准备对象的过程画一个流程图出来
  *
- * @author seven
- * @date 2021/5/31
+ * @author fobgochod
  */
 public class Lesson27 {
 

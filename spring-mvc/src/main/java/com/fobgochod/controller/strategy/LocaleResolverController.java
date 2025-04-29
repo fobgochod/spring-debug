@@ -5,8 +5,7 @@ import org.springframework.stereotype.Controller;
 /**
  * LocaleResolverController.java
  *
- * @author Xiao
- * @date 2021/9/21 20:50
+ * @author fobgochod
  * @see org.springframework.web.servlet.i18n.AcceptHeaderLocaleResolver
  */
 @Controller

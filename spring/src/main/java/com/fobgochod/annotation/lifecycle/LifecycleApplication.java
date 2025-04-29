@@ -25,7 +25,6 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * </ol>
  *
  * @author fobgochod
- * @date 2023/3/9 23:15
  */
 public class LifecycleApplication {
 

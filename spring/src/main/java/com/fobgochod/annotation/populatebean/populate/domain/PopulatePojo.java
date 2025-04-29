@@ -3,8 +3,7 @@ package com.fobgochod.annotation.populatebean.populate.domain;
 /**
  * Pojo.java
  *
- * @author Xiao
- * @date 2022/4/9 13:26
+ * @author fobgochod
  */
 public class PopulatePojo {
 

@@ -28,8 +28,7 @@ import org.springframework.transaction.annotation.Transactional;
  *      <li>主事务回滚会将嵌套事务一起回滚了</li>
  * </ol>
  *
- * @author Xiao
- * @date 2022/10/10 23:35
+ * @author fobgochod
  */
 @Service
 public class PropagationService {

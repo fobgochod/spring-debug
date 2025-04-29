@@ -10,8 +10,7 @@ import org.springframework.stereotype.Component;
 /**
  * 应用缓存清除
  *
- * @author linli
- * @date 2021/03/17
+ * @author fobgochod
  */
 @Aspect
 @Component

@@ -29,8 +29,7 @@ import org.springframework.context.annotation.Configuration;
  * 4、@Priority数字较小的优先级大
  * 5、按注入名称匹配
  *
- * @author Xiao
- * @date 2022/4/9 13:37
+ * @author fobgochod
  * @see AutowiredAnnotationBeanPostProcessor
  * @see org.springframework.beans.factory.support.AbstractBeanDefinition
  * @see org.springframework.beans.factory.config.AutowireCapableBeanFactory

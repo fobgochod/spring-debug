@@ -11,8 +11,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * boolean resolved = false;
  * boolean autowireNecessary = false;
  *
- * @author zhouxiao
- * @date 2021/2/23
+ * @author fobgochod
  */
 public class Lesson16_2 {
 

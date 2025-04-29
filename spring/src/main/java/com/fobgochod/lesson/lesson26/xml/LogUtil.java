@@ -12,8 +12,7 @@ import java.util.Arrays;
  * {@link org.aspectj.lang.annotation.Pointcut}
  * execution(public Integer com.fobgochod.common.aop.xml.MyCalculator.*(Integer,Integer))
  *
- * @author Xiao
- * @date 2021/10/3 13:43
+ * @author fobgochod
  */
 public class LogUtil {
 

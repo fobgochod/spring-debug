@@ -11,8 +11,7 @@ import org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCre
  * 通过XML配置实现AOP
  * 排序规则：{@link AspectJAwareAdvisorAutoProxyCreator#DEFAULT_PRECEDENCE_COMPARATOR}
  *
- * @author Xiao
- * @date 2022/10/5 12:36
+ * @author fobgochod
  * @see AspectJAwareAdvisorAutoProxyCreator
  */
 public class AopXmlAspect {

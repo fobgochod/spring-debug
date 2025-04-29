@@ -8,8 +8,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 /**
  *  XmlTransactionApplication.java
  *
- * @author Xiao
- * @date 2022/4/13 0:20
+ * @author fobgochod
  */
 public class TransactionXmlApplication {
 

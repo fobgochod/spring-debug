@@ -19,8 +19,7 @@ import java.util.Map;
  * InitBinder注解作用于Controller中的方法，表示为当前控制器注册一个属性编辑器
  * 对webDataBinder进行初始化且只对当前的Controller有效
  *
- * @author Xiao
- * @date 2021/9/21 21:09
+ * @author fobgochod
  */
 @Controller
 public class InitBinderController {

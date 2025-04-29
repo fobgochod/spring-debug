@@ -5,11 +5,6 @@ import org.springframework.lang.Nullable;
 import java.time.LocalDate;
 import java.util.Objects;
 
-/**
- * @auther: Xiao
- * @date: 2021/9/11 13:26
- * @description: 功能描述
- */
 public class Person {
 
     private String id;

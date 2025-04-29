@@ -12,8 +12,7 @@ import javax.servlet.http.HttpServletRequest;
 /**
  * HandlerExceptionResolversController.java
  *
- * @author Xiao
- * @date 2021/9/21 20:53
+ * @author fobgochod
  * @see org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver
  * @see org.springframework.web.servlet.mvc.annotation.ResponseStatusExceptionResolver
  * @see org.springframework.web.servlet.mvc.support.DefaultHandlerExceptionResolver

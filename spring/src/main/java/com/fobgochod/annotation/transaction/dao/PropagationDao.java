@@ -9,8 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 /**
  * 事物传播特性厕所
  *
- * @author Xiao
- * @date 2022/10/10 23:00
+ * @author fobgochod
  * @see Propagation
  */
 @Repository
