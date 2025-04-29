@@ -6,7 +6,12 @@ public class MyFactoryBean implements FactoryBean<User> {
 
     @Override
     public User getObject() throws Exception {
-        return new User("zhangsan");
+        User zhangsan = new User("zhangsan");
+        Student student = new Student();
+        student.setId(2);
+        student.setName("zhangsan");
+        zhangsan.setStudent(student);
+        return zhangsan;
     }
 
     @Override

@@ -1,4 +1,4 @@
-package com.fobgochod.annotation.aop.aspect;
+package com.fobgochod.annotation.aoptransaction.aspect;
 
 import com.fobgochod.annotation.aop.config.AopLogUtil;
 import org.aspectj.lang.JoinPoint;
@@ -21,8 +21,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class AopAspect {
 
-    @Pointcut("execution(public int com.fobgochod.annotation.aop.service.jdk.JdkCalculator.add(int, int))"
-            + " || execution(public int com.fobgochod.annotation.aop.service.cglib.CglibCalculator.add(int, int))")
+    @Pointcut("execution(public int com.fobgochod.annotation.aoptransaction.service.JdkCalculator.add(int, int))")
     public void pointCut() {
     }
 
@@ -43,25 +42,15 @@ public class AopAspect {
         return result;
     }
 
+
     @Before(value = "pointCut()")
-    private int beforeMethod2(JoinPoint joinPoint) {
+    private int beforeMethod(JoinPoint joinPoint) {
         //获取方法签名
         Signature signature = joinPoint.getSignature();
         //获取参数信息
         Object[] args = joinPoint.getArgs();
 
-        AopLogUtil.annotationLog(22, Before.class, signature.getName(), args, null);
-        return 100;
-    }
-
-    @Before(value = "pointCut()")
-    private int beforeMethod1(JoinPoint joinPoint) {
-        //获取方法签名
-        Signature signature = joinPoint.getSignature();
-        //获取参数信息
-        Object[] args = joinPoint.getArgs();
-
-        AopLogUtil.annotationLog(21, Before.class, signature.getName(), args, null);
+        AopLogUtil.annotationLog(2, Before.class, signature.getName(), args, null);
         return 100;
     }
 
@@ -78,14 +67,8 @@ public class AopAspect {
     }
 
     @After("pointCut()")
-    public void afterMethod2(JoinPoint joinPoint) {
-        Signature signature = joinPoint.getSignature();
-        AopLogUtil.annotationLog(51, After.class, signature.getName(), joinPoint.getArgs(), null);
-    }
-
-    @After("pointCut()")
     public void afterMethod1(JoinPoint joinPoint) {
         Signature signature = joinPoint.getSignature();
-        AopLogUtil.annotationLog(52, After.class, signature.getName(), joinPoint.getArgs(), null);
+        AopLogUtil.annotationLog(5, After.class, signature.getName(), joinPoint.getArgs(), null);
     }
 }

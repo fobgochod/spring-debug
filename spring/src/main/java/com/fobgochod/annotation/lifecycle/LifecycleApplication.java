@@ -6,6 +6,8 @@ import org.springframework.context.ConfigurableApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
+ * <a href="https://docs.spring.io/spring-framework/reference/core/beans/factory-nature.html#beans-factory-lifecycle-combined-effects">Combining Lifecycle Mechanisms</a>
+ * <p>
  * Multiple lifecycle mechanisms configured for the same bean, with different initialization methods, are called as follows:
  *
  * <ol>

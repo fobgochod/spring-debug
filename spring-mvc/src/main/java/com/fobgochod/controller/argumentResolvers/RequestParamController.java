@@ -1,6 +1,8 @@
 package com.fobgochod.controller.argumentResolvers;
 
+import com.fobgochod.bean.User;
 import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -24,6 +26,12 @@ public class RequestParamController {
     @RequestMapping("/request")
     public String request(@RequestParam(value = "user", required = false, defaultValue = "hehe") String username) {
         System.out.println(username);
+        return "success";
+    }
+
+
+    @GetMapping("/user")
+    public String test(User user) {
         return "success";
     }
 }
